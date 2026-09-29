@@ -1,0 +1,221 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  background: #0f1420;
+  color: #f5f2e9;
+  font-family: -apple-system, BlinkMacSystemFont, "Hiragino Kaku Gothic ProN", "Yu Gothic",
+    sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+.appShell {
+  width: min(100%, 520px);
+  min-height: 100vh;
+  margin: 0 auto;
+  padding-bottom: 40px;
+}
+
+.topbar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  padding: 16px 18px;
+  background: rgba(15, 20, 32, 0.92);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid #2a3145;
+}
+
+.brand {
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.brand span {
+  color: #f2b632;
+}
+
+main {
+  padding: 16px 18px 32px;
+}
+
+.hero {
+  padding: 24px 20px;
+  border-radius: 20px;
+  background: linear-gradient(155deg, #1b2338, #141b2c);
+  border: 1px solid #2a3145;
+  margin-bottom: 20px;
+}
+
+.hero h1 {
+  font-size: 24px;
+  line-height: 1.4;
+  margin: 0 0 10px;
+}
+
+.hero p {
+  color: #b7bdcc;
+  line-height: 1.7;
+  margin: 0 0 8px;
+}
+
+.panel {
+  padding: 18px;
+  border-radius: 18px;
+  background: #171e30;
+  border: 1px solid #2a3145;
+  margin-bottom: 16px;
+}
+
+.panel h2 {
+  font-size: 17px;
+  margin: 0 0 12px;
+}
+
+.gameCard {
+  display: grid;
+  gap: 6px;
+  padding: 14px;
+  border-radius: 14px;
+  background: #10182a;
+  border: 1px solid #2a3145;
+  margin-bottom: 10px;
+}
+
+.gameCard .matchup {
+  font-weight: 850;
+  font-size: 15px;
+}
+
+.gameCard .meta {
+  color: #8b93a7;
+  font-size: 12px;
+}
+
+.teamPicker {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  margin: 10px 0;
+}
+
+.teamPicker button {
+  border: 1px solid #2a3145;
+  border-radius: 12px;
+  padding: 10px;
+  background: #0f1420;
+  color: #f5f2e9;
+  cursor: pointer;
+}
+
+.teamPicker button.selected {
+  border-color: #f2b632;
+  background: #2a2410;
+  color: #f2b632;
+}
+
+input[type="text"] {
+  width: 100%;
+  border: 1px solid #2a3145;
+  border-radius: 12px;
+  padding: 12px;
+  background: #0f1420;
+  color: #f5f2e9;
+}
+
+.primaryButton {
+  display: block;
+  width: 100%;
+  border: 0;
+  border-radius: 14px;
+  padding: 13px;
+  margin-top: 12px;
+  background: #f2b632;
+  color: #16130a;
+  font-weight: 850;
+  text-align: center;
+  cursor: pointer;
+}
+
+.primaryButton:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+.notice {
+  padding: 10px 12px;
+  border-radius: 12px;
+  background: #10182a;
+  color: #b7bdcc;
+  font-size: 13px;
+  line-height: 1.6;
+  margin-top: 10px;
+}
+
+.errorText {
+  color: #ff8383;
+  font-size: 13px;
+  margin-top: 8px;
+}
+
+.rankRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 4px;
+  border-bottom: 1px solid #22293c;
+}
+
+.rankRow .rank {
+  width: 28px;
+  color: #8b93a7;
+  font-weight: 850;
+}
+
+.rankRow .name {
+  flex: 1;
+  padding: 0 8px;
+}
+
+.rankRow .wins {
+  color: #f2b632;
+  font-weight: 850;
+}
+
+.navRow {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.navRow a {
+  flex: 1;
+  text-align: center;
+  padding: 10px;
+  border-radius: 12px;
+  background: #171e30;
+  border: 1px solid #2a3145;
+  font-size: 13px;
+  font-weight: 850;
+}
+
+.footer {
+  padding: 20px 18px 10px;
+  color: #6b7284;
+  font-size: 11px;
+  line-height: 1.7;
+  text-align: center;
+}
