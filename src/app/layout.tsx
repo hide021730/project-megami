@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
+import { BrandLink } from "@/components/BrandLink";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -14,9 +15,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
       <body>
         <div className="appShell">
           <header className="topbar">
-            <a href="/" className="brand">
-              勝利の女神<span>をさがせ！</span>
-            </a>
+            <BrandLink />
           </header>
           <main>{children}</main>
           <footer className="footer">

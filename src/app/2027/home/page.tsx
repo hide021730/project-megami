@@ -53,8 +53,8 @@ export default function SeasonHomePage() {
 
       <div className="menuList" style={{ marginTop: 14 }}>
         <Link href="/2027/checkin" className="menuItem">
-          <p className="menuTitle">📍 チェックインする(体験デモ)</p>
-          <p className="menuSub">球場に行って、チェックインを体験してみよう</p>
+          <p className="menuTitle">📍 チェックインする</p>
+          <p className="menuSub">2027年シーズン開幕までお待ちください。</p>
         </Link>
         <Link href="/2027/results" className="menuItem">
           <p className="menuTitle">📅 試合結果</p>
@@ -68,8 +68,8 @@ export default function SeasonHomePage() {
           <p className="menuTitle">👥 球団別 参加者数</p>
           <p className="menuSub">現在の参加者数を見ることができます。</p>
         </Link>
-        <Link href="/2027/team" className="menuItem">
-          <p className="menuTitle">✏️ 応援球団・ユーザー名を変更する</p>
+        <Link href="/2027/username-edit" className="menuItem">
+          <p className="menuTitle">✏️ ユーザー名を変更する</p>
         </Link>
       </div>
     </section>

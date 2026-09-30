@@ -9,8 +9,8 @@ import { loadDraft, saveDraft } from "@/lib/seasonDraft";
 import { getOrCreateGuestId } from "@/lib/guestId";
 import { fetchMyEntry } from "@/lib/seasonEntry";
 
-const CENTRAL = TEAMS.filter((t) => t.league === "central");
-const PACIFIC = TEAMS.filter((t) => t.league === "pacific");
+const CENTRAL = TEAMS.filter((t) => t.league === "central").sort((a, b) => a.order - b.order);
+const PACIFIC = TEAMS.filter((t) => t.league === "pacific").sort((a, b) => a.order - b.order);
 
 export default function SeasonTeamPage() {
   const router = useRouter();

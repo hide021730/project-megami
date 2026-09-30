@@ -495,6 +495,12 @@ body.theme2027 .authTextButton {
   font-size: 22px;
 }
 
+.teamCapImage {
+  display: block;
+  object-fit: contain;
+  border-radius: 6px;
+}
+
 .teamGrid button.selected {
   border-color: #f2b632;
   background: #2a2410;
