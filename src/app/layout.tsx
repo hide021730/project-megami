@@ -3,6 +3,7 @@ import type { ReactNode } from "react";
 import { BrandLink } from "@/components/BrandLink";
 import { ThemeController } from "@/components/ThemeController";
 import "./globals.css";
+import { Analytics } from "@vercel/analytics/next";
 
 const SITE_URL = "https://megami.tsukuru3.jp";
 const TITLE = "勝利の女神をさがせ！";
@@ -47,6 +48,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
             <BrandLink />
           </header>
           <main>{children}</main>
+          <Analytics />
           <footer className="footer">
             <p>
               本サイトは個人のファン企画であり、NPB・各球団の公式のものではありません。
