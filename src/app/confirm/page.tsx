@@ -19,7 +19,7 @@ export default function SeasonConfirmPage() {
     const loaded = loadDraft();
 
     if (!loaded) {
-      router.replace("/2027/team");
+      router.replace("/team");
       return;
     }
 
@@ -41,7 +41,7 @@ export default function SeasonConfirmPage() {
     }
 
     clearDraft();
-    router.push("/2027/complete");
+    router.push("/complete");
   }
 
   if (!draft) {
@@ -57,7 +57,7 @@ export default function SeasonConfirmPage() {
   return (
     <>
       <div className="navRow">
-        <Link href="/2027/username">修正する</Link>
+        <Link href="/username">修正する</Link>
       </div>
 
       <section className="panel">
@@ -82,7 +82,7 @@ export default function SeasonConfirmPage() {
         <button type="button" className="primaryButton" disabled={submitting} onClick={submit}>
           {submitting ? "参加登録中..." : "参加する！"}
         </button>
-        <Link href="/2027/username" className="authTextButton" style={{ display: "block", marginTop: 10 }}>
+        <Link href="/username" className="authTextButton" style={{ display: "block", marginTop: 10 }}>
           修正する
         </Link>
       </section>

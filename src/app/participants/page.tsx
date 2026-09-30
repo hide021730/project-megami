@@ -20,7 +20,7 @@ export default function SeasonParticipantsPage() {
   return (
     <>
       <div className="navRow">
-        <Link href="/2027/home">ホームに戻る</Link>
+        <Link href="/home">ホームに戻る</Link>
       </div>
 
       <section className="panel">

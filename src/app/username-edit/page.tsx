@@ -23,7 +23,7 @@ export default function SeasonUsernameEditPage() {
       if (!active) return;
 
       if (!entry) {
-        router.replace("/2027");
+        router.replace("/");
         return;
       }
 
@@ -60,7 +60,7 @@ export default function SeasonUsernameEditPage() {
       return;
     }
 
-    router.push("/2027/home");
+    router.push("/home");
   }
 
   if (loading) {
@@ -74,7 +74,7 @@ export default function SeasonUsernameEditPage() {
   return (
     <>
       <div className="navRow">
-        <Link href="/2027/home">ホームに戻る</Link>
+        <Link href="/home">ホームに戻る</Link>
       </div>
 
       <section className="panel">

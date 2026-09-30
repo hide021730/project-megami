@@ -20,7 +20,7 @@ export default function SeasonCompletePage() {
       if (!active) return;
 
       if (!result) {
-        router.replace("/2027");
+        router.replace("/");
         return;
       }
 
@@ -69,7 +69,7 @@ export default function SeasonCompletePage() {
         実際のチェックイン・試合結果・ランキングは、2027年シーズン開幕後に、順次スタートします。
       </p>
 
-      <Link href="/2027/home" className="primaryButton">
+      <Link href="/home" className="primaryButton">
         ホームへ
       </Link>
     </section>

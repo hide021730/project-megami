@@ -19,7 +19,7 @@ export default function SeasonHomePage() {
       if (!active) return;
 
       if (!result) {
-        router.replace("/2027");
+        router.replace("/");
         return;
       }
 
@@ -52,23 +52,23 @@ export default function SeasonHomePage() {
       </div>
 
       <div className="menuList" style={{ marginTop: 14 }}>
-        <Link href="/2027/checkin" className="menuItem">
+        <Link href="/checkin" className="menuItem">
           <p className="menuTitle">📍 チェックインする</p>
           <p className="menuSub">2027年シーズン開幕までお待ちください。</p>
         </Link>
-        <Link href="/2027/results" className="menuItem">
+        <Link href="/results" className="menuItem">
           <p className="menuTitle">📅 試合結果</p>
           <p className="menuSub">2027年シーズン開幕までお待ちください。</p>
         </Link>
-        <Link href="/2027/ranking" className="menuItem">
+        <Link href="/ranking" className="menuItem">
           <p className="menuTitle">👑 ランキング</p>
           <p className="menuSub">2027年シーズン開幕後スタート!</p>
         </Link>
-        <Link href="/2027/participants" className="menuItem">
+        <Link href="/participants" className="menuItem">
           <p className="menuTitle">👥 球団別 参加者数</p>
           <p className="menuSub">現在の参加者数を見ることができます。</p>
         </Link>
-        <Link href="/2027/username-edit" className="menuItem">
+        <Link href="/username-edit" className="menuItem">
           <p className="menuTitle">✏️ ユーザー名を変更する</p>
         </Link>
       </div>

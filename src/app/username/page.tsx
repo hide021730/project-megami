@@ -15,7 +15,7 @@ export default function SeasonUsernamePage() {
     const draft = loadDraft();
 
     if (!draft) {
-      router.replace("/2027/team");
+      router.replace("/team");
       return;
     }
 
@@ -34,18 +34,18 @@ export default function SeasonUsernamePage() {
 
     const draft = loadDraft();
     if (!draft) {
-      router.replace("/2027/team");
+      router.replace("/team");
       return;
     }
 
     saveDraft({ teamId: draft.teamId, username: trimmed });
-    router.push("/2027/confirm");
+    router.push("/confirm");
   }
 
   return (
     <>
       <div className="navRow">
-        <Link href="/2027/team">戻る</Link>
+        <Link href="/team">戻る</Link>
       </div>
 
       <section className="panel">

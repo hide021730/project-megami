@@ -38,13 +38,13 @@ export default function SeasonTeamPage() {
   function next() {
     if (!teamId) return;
     saveDraft({ teamId, username: loadDraft()?.username || existingUsername });
-    router.push("/2027/username");
+    router.push("/username");
   }
 
   return (
     <>
       <div className="navRow">
-        <Link href="/2027">トップに戻る</Link>
+        <Link href="/">トップに戻る</Link>
       </div>
 
       <section className="panel">
