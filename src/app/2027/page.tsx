@@ -63,14 +63,22 @@ export default function Season2027HomePage() {
         </div>
 
         <div className="stepsGrid">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/2027/step-card-1.webp" alt="1. 応援球団選択: あなたの応援する球団を登録しよう! 12球団から選べます" className="stepCardImage" />
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/2027/step-card-2.webp" alt="2. チェックインする: 球場に着いたらGPSでチェックイン! 開場〜試合開始90分後まで" className="stepCardImage" />
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/2027/step-card-3.webp" alt="3. 試合結果: あなたが観戦した試合の結果を自動で反映! 2027年シーズン開幕後" className="stepCardImage" />
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/2027/step-card-4.webp" alt="4. ランキング: 勝利の女神ランキングで全国の仲間と競おう! 2027年シーズン開幕後" className="stepCardImage" />
+          <Link href="/2027/team">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src="/2027/step-card-1.webp" alt="1. 応援球団選択: あなたの応援する球団を登録しよう! 12球団から選べます" className="stepCardImage" />
+          </Link>
+          <Link href="/2027/checkin">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src="/2027/step-card-2.webp" alt="2. チェックインする: 球場に着いたらGPSでチェックイン! 開場〜試合開始90分後まで" className="stepCardImage" />
+          </Link>
+          <Link href="/2027/results">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src="/2027/step-card-3.webp" alt="3. 試合結果: あなたが観戦した試合の結果を自動で反映! 2027年シーズン開幕後" className="stepCardImage" />
+          </Link>
+          <Link href="/2027/ranking">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src="/2027/step-card-4.webp" alt="4. ランキング: 勝利の女神ランキングで全国の仲間と競おう! 2027年シーズン開幕後" className="stepCardImage" />
+          </Link>
         </div>
       </section>
 
