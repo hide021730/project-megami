@@ -4,10 +4,36 @@ import { BrandLink } from "@/components/BrandLink";
 import { ThemeController } from "@/components/ThemeController";
 import "./globals.css";
 
+const SITE_URL = "https://megami.tsukuru3.jp";
+const TITLE = "勝利の女神をさがせ！";
+const DESCRIPTION =
+  "応援に行った試合が、勝つ。そんなジンクスを検証する、個人のファン企画です。2027年シーズンの事前参加登録を受付中。";
+
 export const metadata: Metadata = {
-  title: "勝利の女神をさがせ！",
-  description:
-    "応援に行った試合が、勝つ。そんなジンクスを検証する、個人のファン企画です。2027年シーズンの事前参加登録を受付中。",
+  metadataBase: new URL(SITE_URL),
+  title: TITLE,
+  description: DESCRIPTION,
+  openGraph: {
+    title: TITLE,
+    description: DESCRIPTION,
+    url: SITE_URL,
+    siteName: TITLE,
+    locale: "ja_JP",
+    type: "website",
+    images: [
+      {
+        url: "/2027/og-image.webp",
+        width: 941,
+        height: 1672,
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: TITLE,
+    description: DESCRIPTION,
+    images: ["/2027/og-image.webp"],
+  },
 };
 
 export default function RootLayout({ children }: { children: ReactNode }) {
