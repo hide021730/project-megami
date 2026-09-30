@@ -3,6 +3,7 @@ import { supabase } from "@/lib/supabase";
 export const USERNAME_MAX_LENGTH = 20;
 
 const SUBMIT_ERROR_MESSAGES: Record<string, string> = {
+  taken: "そのユーザー名は、すでに使われています。別の名前をお試しください。",
   reserved: "その名前は使用できません。別の名前をお試しください。",
   invalid_length: `ユーザー名は1〜${USERNAME_MAX_LENGTH}文字で入力してください。`,
   invalid_chars: "ユーザー名に使用できない文字が含まれています。",
