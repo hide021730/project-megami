@@ -212,6 +212,398 @@ input[type="text"] {
   font-weight: 850;
 }
 
+/* 2027年シーズン参加登録フロー: 白基調テーマ(body.theme2027のときだけ有効) */
+
+body.theme2027 {
+  background: #fdf6ea url("/2027/paper-bg.webp") no-repeat top center / cover fixed;
+  color: #2b2a28;
+}
+
+body.theme2027 .topbar {
+  background: rgba(253, 246, 234, 0.92);
+  border-bottom: 1px solid #eadfce;
+}
+
+body.theme2027 .brand span {
+  color: #e6002d;
+}
+
+body.theme2027 .footer {
+  color: #9a8f7a;
+}
+
+body.theme2027 .panel,
+body.theme2027 .gameCard,
+body.theme2027 .confirmCard,
+body.theme2027 .homeHeader .cap,
+body.theme2027 .menuList a,
+body.theme2027 .menuList .menuItem {
+  background: #fff;
+  border: 1px solid #eadfce;
+  color: #2b2a28;
+}
+
+body.theme2027 .notice {
+  background: #fff7e7;
+  color: #7d684c;
+}
+
+body.theme2027 .leagueLabel,
+body.theme2027 .menuSub,
+body.theme2027 .team,
+body.theme2027 .confirmCard .label {
+  color: #9a8f7a;
+}
+
+body.theme2027 .teamGrid button {
+  background: #fff;
+  border: 1px solid #eadfce;
+  color: #2b2a28;
+}
+
+body.theme2027 .teamGrid button.selected {
+  border-color: #e6002d;
+  background: #fdeceb;
+  color: #e6002d;
+}
+
+body.theme2027 input[type="text"] {
+  background: #fff;
+  border: 1px solid #eadfce;
+  color: #2b2a28;
+}
+
+body.theme2027 .navRow a {
+  background: #fff;
+  border: 1px solid #eadfce;
+  color: #2b2a28;
+}
+
+body.theme2027 .countRow {
+  border-bottom: 1px solid #eadfce;
+}
+
+body.theme2027 .authTextButton {
+  color: #4a8b65;
+}
+
+.heroImageWrap {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-bottom: 16px;
+  border: 1px solid #2a3145;
+}
+
+.heroImageWrap img.heroImage {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.heroImageWrap img.queenAccent {
+  position: absolute;
+  top: 0;
+  right: 14%;
+  width: 22%;
+  height: auto;
+  opacity: 0.35;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.seasonCta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-size: 16px;
+}
+
+.heroCtaInside {
+  position: absolute;
+  left: 20%;
+  right: 20%;
+  bottom: 0;
+  display: block;
+}
+
+.heroCtaInside img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.imageButton {
+  display: block;
+  width: 100%;
+  border: 0;
+  background: none;
+  padding: 0;
+  margin-top: 12px;
+  cursor: pointer;
+}
+
+.imageButton img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.stepsHeader {
+  display: grid;
+  grid-template-columns: 0.5fr auto 1.5fr;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 18px;
+}
+
+.stepsTitleImage {
+  grid-column: 2;
+  justify-self: center;
+  display: block;
+  width: 100%;
+  max-width: 280px;
+  height: auto;
+}
+
+.stepsSubtitleImage {
+  grid-column: 3;
+  justify-self: start;
+  display: block;
+  width: 100%;
+  max-width: 145px;
+  height: auto;
+}
+
+@media (max-width: 420px) {
+  .stepsHeader {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    text-align: center;
+  }
+
+  .stepsTitleImage {
+    grid-column: 1;
+    max-width: 220px;
+  }
+
+  .stepsSubtitleImage {
+    grid-column: 1;
+    justify-self: center;
+    max-width: 200px;
+  }
+}
+
+.stepsSection {
+  background: #fdf6ea url("/2027/paper-bg.webp") no-repeat top center / cover;
+  color: #2b2a28;
+  border-radius: 20px;
+  padding: 24px 18px;
+  margin: 22px 0;
+  text-align: center;
+}
+
+.stepsSection h2 {
+  font-size: 20px;
+  margin: 0 0 4px;
+  color: #16130a;
+}
+
+.stepsSection .stepsSubtitle {
+  color: #7d684c;
+  font-size: 13px;
+  margin: 0 0 18px;
+}
+
+.stepsGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0;
+}
+
+.stepCardImage {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.seasonHero {
+  padding: 28px 20px;
+  border-radius: 20px;
+  background: linear-gradient(155deg, #1b2338, #141b2c);
+  border: 1px solid #2a3145;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.seasonHero .badge {
+  display: inline-block;
+  padding: 5px 12px;
+  border-radius: 999px;
+  background: #2a2410;
+  color: #f2b632;
+  font-size: 12px;
+  font-weight: 850;
+  margin-bottom: 10px;
+}
+
+.seasonHero h1 {
+  font-size: 26px;
+  line-height: 1.4;
+  margin: 0 0 14px;
+}
+
+.seasonHero .jinx {
+  color: #b7bdcc;
+  line-height: 1.8;
+  margin: 0;
+}
+
+.leagueLabel {
+  color: #8b93a7;
+  font-size: 13px;
+  font-weight: 850;
+  margin: 16px 0 8px;
+}
+
+.leagueLabel:first-child {
+  margin-top: 0;
+}
+
+.teamGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+}
+
+.teamGrid button {
+  display: grid;
+  gap: 4px;
+  place-items: center;
+  border: 1px solid #2a3145;
+  border-radius: 12px;
+  padding: 12px 6px;
+  background: #10182a;
+  color: #f5f2e9;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.teamGrid button .cap {
+  font-size: 22px;
+}
+
+.teamGrid button.selected {
+  border-color: #f2b632;
+  background: #2a2410;
+  color: #f2b632;
+}
+
+.confirmCard {
+  display: grid;
+  gap: 6px;
+  place-items: center;
+  padding: 20px;
+  border-radius: 14px;
+  background: #10182a;
+  border: 1px solid #2a3145;
+  text-align: center;
+  margin-bottom: 6px;
+}
+
+.confirmCard .cap {
+  font-size: 40px;
+}
+
+.confirmCard .label {
+  color: #8b93a7;
+  font-size: 12px;
+  margin-top: 8px;
+}
+
+.confirmCard .value {
+  font-size: 18px;
+  font-weight: 850;
+}
+
+.completeCard {
+  text-align: center;
+  padding: 10px 0 4px;
+}
+
+.completeCard .confetti {
+  font-size: 42px;
+}
+
+.completeCard h1 {
+  font-size: 20px;
+  color: #f2b632;
+  margin: 6px 0 16px;
+}
+
+.homeHeader {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 6px;
+}
+
+.homeHeader .cap {
+  font-size: 32px;
+}
+
+.homeHeader .name {
+  font-weight: 850;
+}
+
+.homeHeader .team {
+  color: #8b93a7;
+  font-size: 13px;
+}
+
+.menuList {
+  display: grid;
+  gap: 10px;
+}
+
+.menuList a,
+.menuList .menuItem {
+  display: block;
+  padding: 14px;
+  border-radius: 14px;
+  background: #10182a;
+  border: 1px solid #2a3145;
+}
+
+.menuList .menuTitle {
+  font-weight: 850;
+  margin-bottom: 3px;
+}
+
+.menuList .menuSub {
+  color: #8b93a7;
+  font-size: 12px;
+}
+
+.countRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 4px;
+  border-bottom: 1px solid #22293c;
+}
+
+.countRow .cap {
+  margin-right: 8px;
+}
+
+.countRow .count {
+  color: #f2b632;
+  font-weight: 850;
+}
+
 .footer {
   padding: 20px 18px 10px;
   color: #6b7284;

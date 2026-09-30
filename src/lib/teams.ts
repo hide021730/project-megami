@@ -1,25 +1,33 @@
 export type Team = {
   id: number;
   name: string;
+  shortName: string;
   league: "central" | "pacific";
+  color: string;
+  homeStadium: string;
 };
 
 // sql/001_create_schema.sqlのINSERT文と、常に一致させること。
+// colorは球団の一般的なチームカラー(公式ロゴは使わない。帽子の絵文字を、この色で表示する)。
 export const TEAMS: Team[] = [
-  { id: 1, name: "読売ジャイアンツ", league: "central" },
-  { id: 2, name: "阪神タイガース", league: "central" },
-  { id: 3, name: "広島東洋カープ", league: "central" },
-  { id: 4, name: "横浜DeNAベイスターズ", league: "central" },
-  { id: 5, name: "東京ヤクルトスワローズ", league: "central" },
-  { id: 6, name: "中日ドラゴンズ", league: "central" },
-  { id: 7, name: "福岡ソフトバンクホークス", league: "pacific" },
-  { id: 8, name: "北海道日本ハムファイターズ", league: "pacific" },
-  { id: 9, name: "オリックス・バファローズ", league: "pacific" },
-  { id: 10, name: "千葉ロッテマリーンズ", league: "pacific" },
-  { id: 11, name: "埼玉西武ライオンズ", league: "pacific" },
-  { id: 12, name: "東北楽天ゴールデンイーグルス", league: "pacific" },
+  { id: 1, name: "読売ジャイアンツ", shortName: "巨人", league: "central", color: "#f97709", homeStadium: "東京ドーム" },
+  { id: 2, name: "阪神タイガース", shortName: "阪神", league: "central", color: "#ffe201", homeStadium: "阪神甲子園球場" },
+  { id: 3, name: "広島東洋カープ", shortName: "広島", league: "central", color: "#e6002d", homeStadium: "MAZDA Zoom-Zoomスタジアム広島" },
+  { id: 4, name: "横浜DeNAベイスターズ", shortName: "DeNA", league: "central", color: "#0055a6", homeStadium: "横浜スタジアム" },
+  { id: 5, name: "東京ヤクルトスワローズ", shortName: "ヤクルト", league: "central", color: "#4a9b3d", homeStadium: "明治神宮野球場" },
+  { id: 6, name: "中日ドラゴンズ", shortName: "中日", league: "central", color: "#003da5", homeStadium: "バンテリンドーム ナゴヤ" },
+  { id: 7, name: "福岡ソフトバンクホークス", shortName: "ソフトバンク", league: "pacific", color: "#fce300", homeStadium: "みずほPayPayドーム福岡" },
+  { id: 8, name: "北海道日本ハムファイターズ", shortName: "日本ハム", league: "pacific", color: "#4ba0d9", homeStadium: "エスコンフィールドHOKKAIDO" },
+  { id: 9, name: "オリックス・バファローズ", shortName: "オリックス", league: "pacific", color: "#0d2b53", homeStadium: "京セラドーム大阪" },
+  { id: 10, name: "千葉ロッテマリーンズ", shortName: "ロッテ", league: "pacific", color: "#000000", homeStadium: "ZOZOマリンスタジアム" },
+  { id: 11, name: "埼玉西武ライオンズ", shortName: "西武", league: "pacific", color: "#00468c", homeStadium: "ベルーナドーム" },
+  { id: 12, name: "東北楽天ゴールデンイーグルス", shortName: "楽天", league: "pacific", color: "#7b0d29", homeStadium: "楽天モバイルパーク宮城" },
 ];
 
 export function teamName(id: number | null | undefined): string {
   return TEAMS.find((t) => t.id === id)?.name ?? "?";
+}
+
+export function getTeam(id: number | null | undefined): Team | undefined {
+  return TEAMS.find((t) => t.id === id);
 }
